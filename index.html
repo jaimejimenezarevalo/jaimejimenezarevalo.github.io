@@ -3,261 +3,185 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Jaime Jimenez Arevalo — undergraduate mathematics researcher working in coding theory, combinatorics, finite fields, and computational mathematics.">
+  <meta name="description" content="Jaime Jimenez Arevalo — undergraduate mathematics student and researcher in coding theory, combinatorics, finite fields, and computational mathematics.">
   <title>Jaime Jimenez Arevalo | Mathematics</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script>
-    window.MathJax = {
-      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
-      svg: { fontCache: 'global' }
-    };
-  </script>
-  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
-    <div class="nav-wrap">
-      <a class="name-mark" href="#top" aria-label="Jaime Jimenez Arevalo home">JJA</a>
-      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">Menu</button>
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#experience">Experience</a>
-        <a href="#leadership">Leadership</a>
-        <a href="#contact">Contact</a>
-        <a class="nav-cv" href="assets/Jaime-Jimenez-Arevalo-Resume.pdf" target="_blank" rel="noopener">Résumé</a>
-      </nav>
-    </div>
+    <a class="brand" href="#top" aria-label="Home">
+      <span class="brand-mark">JJ</span>
+      <span class="brand-copy">
+        <strong>Jaime Jimenez Arevalo</strong>
+        <small>Mathematics Student &amp; Researcher</small>
+      </span>
+    </a>
+
+    <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">MENU</button>
+
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a class="active" href="#top">Home</a>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <main id="main">
     <section class="hero" id="top">
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Undergraduate mathematician · researcher · educator</p>
-          <h1>Jaime Jimenez Arevalo</h1>
-          <p class="hero-lede">
-            I study mathematical structures behind error-correcting codes, with interests in
-            coding theory, combinatorics, finite fields, and computational mathematics.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#research">Explore my work</a>
-            <a class="button secondary" href="assets/Jaime-Jimenez-Arevalo-Resume.pdf" target="_blank" rel="noopener">View résumé</a>
-          </div>
-          <div class="focus-line" aria-label="Research focus">
-            <span>$\mathbb{F}_q$</span>
-            <span>Affine Grassmann codes</span>
-            <span>Error-correcting codes</span>
-          </div>
+      <div class="hero-copy">
+        <p class="kicker"><span></span> Coding Theory · Combinatorics · Finite Fields</p>
+        <h1>Jaime<br>Jimenez<br>Arevalo</h1>
+        <div class="short-rule"></div>
+        <p class="hero-text">
+          I explore the structure of mathematical objects and develop computational tools to investigate them.
+          My interests lie at the intersection of algebraic coding theory, combinatorics, and computational mathematics.
+        </p>
+        <div class="button-row">
+          <a class="button button-fill" href="assets/Jaime-Jimenez-Arevalo-Resume.pdf" target="_blank" rel="noopener">View résumé <span>↗</span></a>
+          <a class="button button-outline" href="mailto:jjimenezarevalo1@toromail.csudh.edu">Get in touch <span>→</span></a>
         </div>
+      </div>
 
-        <div class="portrait-wrap">
-          <div class="portrait-frame">
-            <img src="assets/headshot.jpg" alt="Professional headshot of Jaime Jimenez Arevalo">
-          </div>
-          <div class="portrait-note">
-            <strong>B.S. Mathematics</strong>
-            <span>California State University, Dominguez Hills · Expected 2027</span>
-          </div>
-        </div>
+      <div class="hero-image-wrap">
+        <div class="hero-image-shadow" aria-hidden="true"></div>
+        <img src="assets/headshot.jpg" alt="Professional headshot of Jaime Jimenez Arevalo">
+        <div class="dot-grid" aria-hidden="true"></div>
       </div>
     </section>
 
-    <section class="section" id="about">
-      <div class="section-heading">
-        <p class="eyebrow">About</p>
-        <h2>Mathematics as curiosity, resilience, and community</h2>
+    <section class="about-strip" id="about">
+      <div class="section-title icon-title">
+        <span class="line-icon" aria-hidden="true">○</span>
+        <h2>About me</h2>
       </div>
-      <div class="about-grid">
-        <div class="prose">
-          <p>
-            I am a first-generation undergraduate mathematics student and researcher at
-            California State University, Dominguez Hills. My path into mathematics began with
-            the puzzle-like satisfaction of solving problems and grew through math and science
-            competitions, college coursework, tutoring, and research.
-          </p>
-          <p>
-            After transferring from Long Beach City College, I began conducting research in
-            coding theory and combinatorics. My long-term goal is to earn a doctoral degree,
-            contribute to mathematical research, and expand access to academic opportunities
-            for students from underrepresented communities.
-          </p>
-        </div>
-        <aside class="fact-card">
-          <h3>Current interests</h3>
-          <ul>
-            <li>Algebraic coding theory</li>
-            <li>Affine Grassmann codes</li>
-            <li>Combinatorics</li>
-            <li>Finite fields and linear algebra</li>
-            <li>Computational experimentation</li>
-          </ul>
-        </aside>
+      <p>
+        I am a first-generation undergraduate mathematics student at California State University, Dominguez Hills.
+        I am passionate about research, problem solving, and turning abstract ideas into concrete results through proof and computation.
+      </p>
+      <div class="contact-list compact">
+        <a href="mailto:jjimenezarevalo1@toromail.csudh.edu">✉ jjimenezarevalo1@toromail.csudh.edu</a>
+        <span>⌖ South Gate, CA</span>
+        <a href="#">● github.com/yourusername</a>
+        <a href="#">in linkedin.com/in/yourusername</a>
       </div>
     </section>
 
-    <section class="section tinted" id="research">
-      <div class="section-heading">
-        <p class="eyebrow">Research</p>
-        <h2>Selected projects</h2>
-        <p class="section-intro">My work combines theoretical questions with computation, simulation, and mathematical exposition.</p>
+    <section class="content-section" id="research">
+      <div class="section-label">
+        <h2>Research &amp;<br>projects</h2>
+        <span class="blue-rule"></span>
+        <p>Selected projects exploring algebraic structures, coding theory, and computational methods.</p>
       </div>
 
-      <div class="cards research-cards">
-        <article class="card featured-card">
-          <div class="card-tag">Summer 2026</div>
+      <div class="project-grid">
+        <article class="project-card">
+          <p class="project-number">01</p>
           <h3>Affine Grassmann Codes</h3>
-          <p>
-            Undergraduate research through <em>Combinatorics and Coding Theory in the Tropics</em>
-            at the University of Puerto Rico in Ponce. I study the mathematical structure of
-            affine Grassmann codes and develop proof-based and computational approaches to the project.
-          </p>
-          <div class="topic-list">
-            <span>Coding theory</span><span>Algebra</span><span>LaTeX</span><span>SageMath</span>
-          </div>
+          <span class="mini-rule"></span>
+          <p>Exploring the mathematical structure of affine Grassmann codes and their decoding properties.</p>
+          <a href="#">View project →</a>
         </article>
 
-        <article class="card">
-          <div class="card-tag">2025–Present</div>
-          <h3>Liar's Bingo and Error-Correcting Codes</h3>
-          <p>
-            Research at CSUDH examining Liar's Bingo through the lens of coding theory. I use
-            Python simulations to model strip constructions, introduce controlled errors, and
-            investigate generalizations to different bases and strip sizes.
-          </p>
-          <p class="award">Second Place · CSUDH Student Research Conference, Physical and Mathematical Sciences</p>
-          <div class="topic-list">
-            <span>Python</span><span>Simulation</span><span>Combinatorics</span>
-          </div>
+        <article class="project-card">
+          <p class="project-number">02</p>
+          <h3>Liar's Bingo &amp; Error-Correcting Codes</h3>
+          <span class="mini-rule"></span>
+          <p>Studying connections between combinatorial games, error-correcting codes, and coding theory.</p>
+          <a href="#">View project →</a>
         </article>
 
-        <article class="card">
-          <div class="card-tag">Computational exploration</div>
-          <h3>Symmetric Matrices over $\mathbb{F}_3$</h3>
-          <p>
-            A developing investigation of symmetric matrices over finite fields, including
-            enumeration, rank classification, and partitions of field elements. The project uses
-            code to expose patterns that can guide proof and further research.
-          </p>
-          <div class="equation-box">
-            $$M=\begin{pmatrix}a & b\\ b & c\end{pmatrix},\qquad a,b,c\in\mathbb{F}_3$$
-          </div>
-          <div class="topic-list">
-            <span>Finite fields</span><span>Linear algebra</span><span>SageMath</span>
-          </div>
+        <article class="project-card">
+          <p class="project-number">03</p>
+          <h3>Finite Field Computations</h3>
+          <span class="mini-rule"></span>
+          <p>Building SageMath and Python tools to model, enumerate, and analyze algebraic structures over finite fields.</p>
+          <a href="#">View project →</a>
         </article>
       </div>
     </section>
 
-    <section class="section" id="experience">
-      <div class="section-heading">
-        <p class="eyebrow">Experience</p>
-        <h2>Research and mathematics education</h2>
+    <section class="experience-section" id="experience">
+      <div class="section-label narrow">
+        <h2>Experience</h2>
+        <span class="blue-rule"></span>
       </div>
 
-      <div class="timeline">
-        <article class="timeline-item">
-          <div class="timeline-date">2026</div>
-          <div>
-            <h3>Undergraduate Researcher</h3>
-            <p class="organization">Combinatorics and Coding Theory in the Tropics · University of Puerto Rico in Ponce</p>
-            <p>Conducting research on affine Grassmann codes while strengthening skills in proof writing, LaTeX, coding, and collaborative mathematical research.</p>
-          </div>
-        </article>
-
-        <article class="timeline-item">
-          <div class="timeline-date">2025–Present</div>
-          <div>
-            <h3>Student Researcher</h3>
-            <p class="organization">California State University, Dominguez Hills</p>
-            <p>Investigating Liar's Bingo and its relationship to error-correcting codes; creating simulations and presenting results in a research-poster format.</p>
-          </div>
-        </article>
-
-        <article class="timeline-item">
-          <div class="timeline-date">2023–Present</div>
-          <div>
-            <h3>Tutor and Supplemental Instructor</h3>
-            <p class="organization">Long Beach City College Math Success Center</p>
-            <p>Supporting students from foundational mathematics through differential equations and linear algebra, leading review sessions, and partnering with faculty during lectures.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section dark" id="leadership">
-      <div class="section-heading light-heading">
-        <p class="eyebrow">Leadership</p>
-        <h2>Building mathematical community</h2>
-      </div>
-      <div class="leadership-grid">
+      <div class="experience-grid">
         <article>
-          <p class="role-date">2025–Present</p>
-          <h3>Secretary, CSUDH Math Club</h3>
-          <p>Supporting club programming, organizing records and agendas, and helping cultivate a collaborative environment for mathematics students.</p>
+          <h3>Student Researcher</h3>
+          <p class="institution">CSU Dominguez Hills</p>
+          <p class="date">Nov 2025 – Present</p>
+          <span class="mini-rule"></span>
+          <p>Researching Liar's Bingo, developing Python simulations, and presenting work at the CSUDH Student Research Conference, where the project earned second place.</p>
         </article>
+
         <article>
-          <p class="role-date">2023–2024</p>
-          <h3>Founder and President, LBCC Math Club</h3>
-          <p>Re-established the club, secured grants, and organized tutoring sessions, guest lectures, and community-building activities.</p>
+          <h3>Tutor / Supplemental Instructor</h3>
+          <p class="institution">Long Beach City College</p>
+          <p class="date">Aug 2023 – Present</p>
+          <span class="mini-rule"></span>
+          <p>Leading workshops, tutoring across mathematics subjects, and supporting students in lectures, review sessions, and exam preparation.</p>
+        </article>
+
+        <article>
+          <h3>Undergraduate Researcher</h3>
+          <p class="institution">University of Puerto Rico in Ponce</p>
+          <p class="date">Jun 2026 – Jul 2026</p>
+          <span class="mini-rule"></span>
+          <p>Conducted research on affine Grassmann codes and participated in technical workshops on LaTeX, proof writing, coding, and research methods.</p>
         </article>
       </div>
     </section>
 
-    <section class="section" id="education">
-      <div class="section-heading">
-        <p class="eyebrow">Education & tools</p>
-        <h2>Academic preparation</h2>
-      </div>
-      <div class="education-grid">
-        <article class="education-card">
-          <p class="degree-type">Bachelor of Science</p>
-          <h3>Mathematics</h3>
-          <p>California State University, Dominguez Hills</p>
-          <p class="muted">Expected July 2027</p>
-          <p class="coursework"><strong>Selected coursework:</strong> Foundations of Higher Mathematics, Linear Algebra, Abstract Algebra, Complex Analysis, Computing for Mathematics.</p>
-        </article>
-        <article class="education-card">
-          <p class="degree-type">Associate of Science</p>
-          <h3>Mathematics</h3>
-          <p>Long Beach City College</p>
-          <p class="muted">Completed 2025</p>
-          <p class="coursework"><strong>Selected coursework:</strong> Calculus, Linear Algebra, and Differential Equations.</p>
-        </article>
-        <article class="skills-card">
-          <h3>Technical toolkit</h3>
-          <div class="skill-groups">
-            <p><strong>Programming:</strong> Python, Java, C++</p>
-            <p><strong>Mathematical tools:</strong> LaTeX, SageMath</p>
-            <p><strong>Other:</strong> Adobe Photoshop, Microsoft Office, OBS</p>
-            <p><strong>Languages:</strong> English, Spanish</p>
-          </div>
-        </article>
-      </div>
-    </section>
+    <section class="lower-grid" id="education">
+      <article class="info-panel">
+        <div class="panel-heading"><span>⌑</span><h2>Education</h2></div>
+        <h3>B.S. in Mathematics <small>(Expected July 2027)</small></h3>
+        <p>California State University, Dominguez Hills</p>
+        <h3>A.S. in Mathematics <small>(2022–2025)</small></h3>
+        <p>Long Beach City College</p>
+        <a href="assets/Jaime-Jimenez-Arevalo-Resume.pdf" target="_blank" rel="noopener">View full résumé →</a>
+      </article>
 
-    <section class="contact-section" id="contact">
-      <div>
-        <p class="eyebrow">Contact</p>
-        <h2>Let’s talk mathematics.</h2>
-        <p>I welcome conversations about undergraduate research, coding theory, mathematics education, and graduate-study opportunities.</p>
-      </div>
-      <div class="contact-actions">
-        <a class="button light" href="mailto:arevalojjaime@gmail.com">arevalojjaime@gmail.com</a>
-        <a class="text-link" href="assets/Jaime-Jimenez-Arevalo-Resume.pdf" target="_blank" rel="noopener">Download résumé →</a>
-        <!-- Replace the # below with your GitHub profile URL once ready. -->
-        <a class="text-link" href="#" aria-label="GitHub profile link placeholder">GitHub profile →</a>
-      </div>
+      <article class="info-panel">
+        <div class="panel-heading"><span>&lt;/&gt;</span><h2>Technical skills</h2></div>
+        <p><strong>Programming:</strong><br>Python, Java, C++</p>
+        <p><strong>Tools &amp; software:</strong><br>LaTeX, SageMath, Git, Adobe Photoshop, OBS, Microsoft Office</p>
+        <p><strong>Languages:</strong><br>English, Spanish</p>
+      </article>
+
+      <article class="info-panel">
+        <div class="panel-heading"><span>◎</span><h2>Leadership</h2></div>
+        <h3>CSUDH Math Club — Secretary</h3>
+        <p>Nov 2025 – Present</p>
+        <h3>LBCC Math Club — Founder &amp; President</h3>
+        <p>Nov 2023 – Dec 2024</p>
+      </article>
     </section>
   </main>
 
-  <footer>
-    <p>© <span id="year"></span> Jaime Jimenez Arevalo. Built for GitHub Pages.</p>
+  <footer id="contact">
+    <div class="footer-quote">
+      <span>“</span>
+      <p>Mathematics is the language in which the universe is written.<br><small>— Galileo Galilei</small></p>
+    </div>
+    <p class="footer-note">I am open to discussing research ideas, collaborations, and opportunities in mathematics.</p>
+    <div class="footer-contact">
+      <a href="mailto:jjimenezarevalo1@toromail.csudh.edu">✉ jjimenezarevalo1@toromail.csudh.edu</a>
+      <span>⌖ South Gate, CA</span>
+    </div>
+    <div class="footer-links">
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+    </div>
   </footer>
 
   <script src="script.js"></script>

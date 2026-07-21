@@ -1,35 +1,32 @@
-# Jaime Jimenez Arevalo — Mathematics Website
+# Jaime Jimenez Arevalo — Mathematics Portfolio
 
-This folder contains a complete static website for GitHub Pages.
-
-## Files
-
-- `index.html` — page content
-- `styles.css` — design and mobile layout
-- `script.js` — mobile navigation and automatic footer year
-- `assets/headshot.jpg` — profile photograph
-- `assets/Jaime-Jimenez-Arevalo-Resume.pdf` — downloadable résumé
+A responsive brutalist-inspired academic portfolio for GitHub Pages.
 
 ## Publish on GitHub Pages
 
-1. Create a GitHub account and choose your username.
-2. Create a public repository named exactly `YOURUSERNAME.github.io`.
-3. Upload all files and folders from this package to the repository.
-4. Open the repository's **Settings → Pages**.
-5. Under **Build and deployment**, select **Deploy from a branch**.
-6. Select `main` and `/ (root)`, then save.
-7. Your website will appear at `https://YOURUSERNAME.github.io`.
+1. Create a public repository named `YOURUSERNAME.github.io`.
+2. Upload everything inside this folder to the repository root.
+3. Open **Settings → Pages**.
+4. Under **Build and deployment**, choose **Deploy from a branch**.
+5. Choose `main` and `/ (root)`, then save.
 
-## One required edit
+Your site will appear at `https://YOURUSERNAME.github.io`.
 
-In `index.html`, find:
+## Required edits
 
-```html
-<a class="text-link" href="#" aria-label="GitHub profile link placeholder">GitHub profile →</a>
-```
+Search `index.html` for `yourusername` and replace the GitHub and LinkedIn placeholder links.
 
-Replace `#` with your actual GitHub profile address.
+The public website uses:
 
-## Privacy note
+- School email: `jjimenezarevalo1@toromail.csudh.edu`
+- No phone number
 
-The unofficial transcript is intentionally not included because it contains a student ID and detailed academic records. Do not upload it to a public GitHub repository.
+## Files
+
+- `index.html` — all page content
+- `styles.css` — brutalist navy/blue visual design
+- `script.js` — mobile navigation
+- `assets/headshot.jpg` — portrait image
+- `assets/Jaime-Jimenez-Arevalo-Resume.pdf` — downloadable résumé
+
+Note: the included résumé PDF is the original uploaded résumé and may still contain contact information that is not displayed on the website. Replace that PDF with an updated résumé before publishing if desired.

@@ -9,6 +9,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Two featured projects instead of three. */
+    .project-grid.two-projects { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .project-grid.two-projects .project-card:last-child { border-right: 1px solid #9aa4b1; }
+    .hero-about p + p { margin-top: 1rem; }
+    @media (max-width: 760px) {
+      .project-grid.two-projects { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -36,16 +45,27 @@
 
   <main id="main">
     <section class="hero" id="top">
-      <div class="hero-copy">
+      <div class="hero-copy" id="about">
         <p class="kicker"><span></span> Coding Theory · Combinatorics · Finite Fields</p>
         <h1>Jaime<br>Jimenez<br>Arevalo</h1>
         <div class="short-rule"></div>
-        <p class="hero-text">
-          I explore the structure of mathematical objects and develop computational tools to investigate them.
-          My interests lie at the intersection of algebraic coding theory, combinatorics, and computational mathematics.
-        </p>
+        <div class="hero-text hero-about">
+          <p>
+            I am a first-generation undergraduate mathematics student at California State University, Dominguez Hills,
+            where I study mathematics and conduct research in coding theory and combinatorics. My current work includes
+            decoding polar affine Grassmann codes and investigating the relationship between Liar's Bingo and
+            error-correcting codes.
+          </p>
+          <p>
+            I am especially interested in using proof, computation, and mathematical experimentation to understand
+            abstract structures. Alongside my research, I work as a tutor and supplemental instructor, helping students
+            build confidence in subjects ranging from introductory mathematics to differential equations and linear algebra.
+            My long-term goal is to earn a Ph.D. in mathematics, contribute to mathematical research, and expand access to
+            academic opportunities for students from underrepresented communities.
+          </p>
+        </div>
         <div class="button-row">
-          <a class="button button-fill" href="assets/Jaime-Jimenez-Arevalo-Resume.pdf" target="_blank" rel="noopener">View résumé <span>↗</span></a>
+          <a class="button button-fill" href="assets/Jaime-Jimenez-Arevalo-CV.pdf" target="_blank" rel="noopener">View CV <span>↗</span></a>
           <a class="button button-outline" href="mailto:jjimenezarevalo1@toromail.csudh.edu">Get in touch <span>→</span></a>
         </div>
       </div>
@@ -57,22 +77,6 @@
       </div>
     </section>
 
-    <section class="about-strip" id="about">
-      <div class="section-title icon-title">
-        <span class="line-icon" aria-hidden="true">○</span>
-        <h2>About me</h2>
-      </div>
-      <p>
-        I am a first-generation undergraduate mathematics student at California State University, Dominguez Hills.
-        I am passionate about research, problem solving, and turning abstract ideas into concrete results through proof and computation.
-      </p>
-      <div class="contact-list compact">
-        <a href="mailto:jjimenezarevalo1@toromail.csudh.edu">✉ jjimenezarevalo1@toromail.csudh.edu</a>
-        <span>⌖ South Gate, CA</span>
-        <a href="#">● github.com/jaimejimenezarevalo</a>
-        <a href="https://www.linkedin.com/in/jaimejimenezarevalo">in linkedin.com/in/jaimejimenezarevalo</a>
-      </div>
-    </section>
 
     <section class="content-section" id="research">
       <div class="section-label">
@@ -81,12 +85,12 @@
         <p>Selected projects exploring algebraic structures, coding theory, and computational methods.</p>
       </div>
 
-      <div class="project-grid">
+      <div class="project-grid two-projects">
         <article class="project-card">
           <p class="project-number">01</p>
-          <h3>Affine Grassmann Codes</h3>
+          <h3>Decoding Polar Affine Grassmann Codes</h3>
           <span class="mini-rule"></span>
-          <p>Exploring the mathematical structure of affine Grassmann codes and their decoding properties.</p>
+          <p>Studying decoding methods for polar affine Grassmann codes through algebraic structure, proof, and computation.</p>
           <a href="#">View project →</a>
         </article>
 
@@ -98,13 +102,6 @@
           <a href="#">View project →</a>
         </article>
 
-        <article class="project-card">
-          <p class="project-number">03</p>
-          <h3>Finite Field Computations</h3>
-          <span class="mini-rule"></span>
-          <p>Building SageMath and Python tools to model, enumerate, and analyze algebraic structures over finite fields.</p>
-          <a href="#">View project →</a>
-        </article>
       </div>
     </section>
 
@@ -148,7 +145,7 @@
         <p>California State University, Dominguez Hills</p>
         <h3>A.S. in Mathematics <small>(2022–2025)</small></h3>
         <p>Long Beach City College</p>
-        <a href="assets/Jaime-Jimenez-Arevalo-Resume.pdf" target="_blank" rel="noopener">View full résumé →</a>
+        <a href="assets/Jaime-Jimenez-Arevalo-CV.pdf" target="_blank" rel="noopener">View full CV →</a>
       </article>
 
       <article class="info-panel">
@@ -179,8 +176,8 @@
       <span>⌖ South Gate, CA</span>
     </div>
     <div class="footer-links">
-      <a href="#">GitHub</a>
-      <a href="#">LinkedIn</a>
+      <a href="https://github.com/jaimejimenezarevalo" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/jaimejimenezarevalo/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </footer>
 
